@@ -5,6 +5,7 @@
 Include the library in Your Cargo.toml
 ```
 [dependencies.fk-lis3dsh]
+version = "0.1.0"
 ```
 
 
@@ -13,6 +14,8 @@ Use embedded-hal to create spi and cs and create accelerometer:
 Create accelerometer with default configuration, only SPIBus implemented for now.
 
 ```
+use fk_lis3dsh::{LIS3DSH, RawAccelerometer};
+
 let mut acc =
             LIS3DSH::new_with_interface(lis3dsh::commbus::SPIBus::new(spi, cs), &mut delay).unwrap();
 ```
