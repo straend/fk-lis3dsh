@@ -1,3 +1,4 @@
+![](https://img.shields.io/crates/v/fk-lis3dsh.svg)
 # embedded-hal driver for LIS3DSH 
 
 ## Usage
