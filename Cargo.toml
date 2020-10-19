@@ -1,0 +1,19 @@
+[package]
+name = "fk-lis3dsh"
+version = "0.1.0"
+authors = ["Tomas Strand <tomas@fik1.net>"]
+edition = "2018"
+license = "MIT"
+categories = [ "embedded", "hardware-support", "no-std" ]
+keywords = [ "lis3dsh", "accelerometer", "embedded-hal-driver" ]
+description = "embedded-hal driver for LIS3D-SH Accelerometer"
+readme = "readme.md"
+repository = "https://github.com/straend/fk-lis3dsh/"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+embedded-hal = "0.2.4"
+accelerometer = "~0.12"
+num_enum = { version = "~0.5", default-features = false }
+

@@ -1,0 +1,5 @@
+# Generated files
+/target/
+
+# Ignore Cargo.lock in library
+Cargo.lock
